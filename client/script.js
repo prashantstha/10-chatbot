@@ -1,6 +1,6 @@
-import './style.css'
+// import './dist/css/style.css'
 import bot from './assets/bot.svg';
-import user from './assets/user.svg';
+import user from './assets/profile.jpg';
 
 const form = document.querySelector('form');
 const chatContainer = document.querySelector('#chat_container');
@@ -44,7 +44,7 @@ function generateUniqeId() {
 function chatStripe (isAi, value, uniqueId) {
   return(
     `
-    <div class="wrapper ${isAi && 'ai'}">
+    <div class="chat-wrapper ${isAi && 'ai'}">
       <div class="chat">
         <div class="profile">
           <img
@@ -106,8 +106,8 @@ const handleSubmit = async (e) => {
 
 form.addEventListener('submit', handleSubmit);
 
-form.addEventListener('keyup', (e) => {
-  if( e.keyCode === 13) {
-    handleSubmit(e);
-  }
-})
+// form.addEventListener('keyup', (e) => {
+//   if( e.keyCode === 13) {
+//     handleSubmit(e);
+//   }
+// })

@@ -5,15 +5,23 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OpenAI Chatbot App</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./dist/css/style.css">
   </head>
   <body>
     <div id="app">
+      <header class="app-header">
+        <h1>Chatbot by ChatGPT</h1>
+        <div class="profile-avatar">
+          <img src="./assets/profile.jpg" alt="profile">
+        </div>
+      </header>
       <div id="chat_container"></div>
+      <div class="form-wrapper">
       <form action="">
-        <textarea name="prompt" id="" cols="1" rows="1" placeholder="Ask me..."></textarea>
+        <input name="prompt" id="" placeholder="Ask me anything ..."/>
         <button type="submit"><img src="./assets/send.svg" /></button>
       </form>
+    </div>
     </div>
     <script type="module" src="/script.js"> </script>
   </body>
