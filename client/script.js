@@ -1,4 +1,4 @@
-// import './dist/css/style.css'
+import './dist/css/style.css';
 import bot from './assets/bot.svg';
 import user from './assets/profile.jpg';
 
